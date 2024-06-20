@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+        /* Estilo da barra de navegação */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #517422; /* Cor de fundo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+            padding: 10px 20px; /* Espaçamento interno */
+        }
+        
+        nav .logo {
+            width: 50px; /* Largura da logo */
+            height: auto; /* Altura automática */
+        }
+        
+        nav ul {
+            list-style-type: none; /* Remover marcadores de lista */
+            margin: 0; /* Remover margem padrão */
+            padding: 0; /* Remover preenchimento padrão */
+            display: flex; /* Exibir itens em linha */
+        }
+        
+        nav ul li {
+            margin: 0 10px; /* Margem entre os itens */
+        }
+        
+        nav ul li a {
+            display: block; /* Transformar em bloco para ocupar toda a largura disponível */
+            padding: 10px 20px; /* Espaçamento interno */
+            text-decoration: none; /* Remover decoração de texto */
+            color: white; /* Cor do texto */
+            font-weight: bold; /* Negrito */
+            transition: background-color 0.3s, color 0.3s; /* Transição suave */
+        }
+        
+        nav ul li a:hover {
+            background-color: #517422; /* Cor de fundo ao passar o mouse */
+            color: #fff; /* Cor do texto ao passar o mouse */
+        }
+
+header, section, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.servicos-produtos .planos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servicos-produtos .plano {
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid #FFAB40;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #fff7e6;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.servicos-produtos .plano:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.servicos-produtos {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+.servicos-produtos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.servicos-produtos h2 {
+    text-align: center;
+    font-size: 2rem; /* Reduzi o tamanho da fonte de 2.5rem para 2rem */
+    margin-bottom: 1.5rem; /* Reduzi o espaço inferior para 1.5rem */
+    color: #333;
+}
+
+.servicos-produtos .intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem; /* Reduzi o espaço inferior para 2rem */
+    font-size: 1rem; /* Reduzi o tamanho da fonte de 1.2rem para 1rem */
+    line-height: 1.6; /* Ajustei a altura da linha para 1.6 */
+}
+
+.planos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plano {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 45%;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.plano:hover {
+    transform: translateY(-5px);
+}
+
+.plano h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.plano p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.plano ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+.plano ul li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.saiba-mais {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.saiba-mais a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.saiba-mais a:hover {
+    color: #e65c00;
+}
+
+
+.plano h3 {
+    color: #EEAA1B;
+}
+
+.plano ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plano ul li {
+    padding: 5px 0;
+}
+
+.plano ul li:before {
+    content: "🍊";
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .planos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plano {
+        width: 80%;
+    }
+}
+
+header {
+    background-image: url('/assets/img/suco2.jpg'); 
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    height: 100px;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #517422;
+    color: #EEAA1B;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contatos {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.contato form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contato input[type="text"],
+.contato input[type="email"],
+.contato input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contato input[type="submit"] {
+    background-color: #2C4526;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato input[type="submit"]:hover {
+    background-color: #2C4526;
+}
+
+.escola {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

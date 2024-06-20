@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suco Maria Peregrina</title>
+    <style>
+        /* Adicione o CSS para tornar o logo menor e responsivo */
+        nav .logo img {
+            width: 100px; /* Defina o tamanho inicial do logo */
+            height: auto;
+            max-width: 100%;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav .logo img {
+                width: 80px; /* Tamanho do logo para telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav .logo img {
+                width: 60px; /* Tamanho do logo para telas muito pequenas */
+            }
+        }
+
+        /* Estilização básica para o layout */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .escola, .servicos-produtos, .contato {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .planos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .plano {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form input, form label {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/assets/img/logo.png" alt="Logo do Suco Maria Peregrina">
+        </div>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1></h1>
+        <h2></h2>
+    </header>
+    <section class="escola">
+             <section id="sobre">
+        <h2>Nossa Escola</h2>
+        <p>Descubra os segredos por trás do Suco Maria Peregrina em nossa escola de sucos.</p>
+        <p>O Serviço Social Maria Peregrina é uma associação de assistência social, sem fins econômicos e que trabalha 
+        com crianças e adolescentes de 05 a 16 anos propiciando sua formação integral.</p>
+    </section>
+    <section class="servicos-produtos">
+        <div class="container">
+            <section id="produtos">
+            <h2>Nossos Serviços e Produtos</h2>
+            <p class="intro">Descubra nossa variedade de sucos naturais e serviços personalizados.</p>
+            <div class="planos">
+                <div class="plano">
+                    <h3>Plano Start</h3>
+                    <p>Perfeito para quem quer experimentar nossos sucos por um preço acessível.</p>
+                    <ul>
+                        <li>- 1 suco de 1L por semana</li>
+                        <li>- Entrega em domicílio</li>
+                        <li>- Natural e sem conservantes</li>
+                    </ul>
+                </div>
+                <div class="plano">
+                    <h3>Plano Top</h3>
+                    <p>Ideal para os apreciadores de sucos que desejam mais variedade e exclusividade.</p>
+                    <ul>
+                        <li>- 1 suco de 2L por semana</li>
+                        <li>- Entrega em domicílio</li>
+                        <li>- Natural e sem conservantes</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="saiba-mais">
+                <p>Quer saber mais? <a href="http://bit.ly/AssineSuco">Entre em contato conosco</a>.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contato">
+                <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Fique à vontade para nos contatar para mais informações.</p>
+        <form method="POST">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <div class="contatos">
+            <p>Telefone: (17) 98811-7656</p>
+            <p>Email: suco@mariaperegrina.org</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/sucomariaperegrina/" target="_blank"><img src="/assets/img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/sucomariaperegrina/" target="_blank"><img src="/assets/img/facebook.png" alt="Facebook"></a>
+            <a href="https://api.whatsapp.com/send?phone=5517988117656" target="_blank"><img src="/assets/img/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+    </footer>
+</body>
+</html>
